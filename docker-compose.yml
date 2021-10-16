@@ -41,6 +41,15 @@ services:
             test: ["CMD", "mysqladmin", "ping", "-p${DB_PASSWORD}"]
             retries: 3
             timeout: 5s
+    adminer:
+        image: adminer
+        restart: always
+        environment:
+            ADMINER_DEFAULT_SERVER: '${DB_HOST}'
+        ports:
+            - 8080:8080
+        networks:
+            - sail
 networks:
     sail:
         driver: bridge
