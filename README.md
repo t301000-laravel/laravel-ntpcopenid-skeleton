@@ -9,8 +9,8 @@
 
 ### 使用方式
 
-- ```git clone https://github.com/t301000-laravel/laravel-ntpcopenid-skeleton.git```
+- 執行 `git clone https://github.com/t301000-laravel/laravel-ntpcopenid-skeleton.git`
 - 將 `.env.example` 複製為 `.env` 並修改資料庫設定
-- 執行 ```composer install```
-- 執行 ```php artisan key:generate```
-- 執行 ```php artisan migrate --seed```
+- 執行 `composer install`
+- 執行 `php artisan key:generate`
+- 執行 `php artisan migrate --seed`
