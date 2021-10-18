@@ -7,6 +7,12 @@
 
 -----
 
+### 系統需求
+
+- PHP 建議使用 8.0.11 以上
+
+-----
+
 ### 使用方式
 
 - 執行 `git clone https://github.com/t301000-laravel/laravel-ntpcopenid-skeleton.git`
