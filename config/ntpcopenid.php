@@ -19,7 +19,7 @@
  * 未設定規則代表不設限
  * 可用欄位 => unitCode 單位代碼, role 身份, title 職務, group 職稱, openID OpedID 帳號
  * 除 unitCode 為字串之外，其餘可為字串或陣列
- * 
+ *
  * 規則設定範例：
  * ['unitCode' => '014569'],
  * ['unitCode' => '014569', 'role' => '教師'],
@@ -28,31 +28,31 @@
  * ['unitCode' => '014569', 'title' => ['主任', '組長']],
  * ['group' => '資訊組長'],
  * ['openID' => ['somebody']],
- * 
+ *
  */
 
 return [
     'identity' => 'https://openid.ntpc.edu.tw/',
 	'required' => [
-        'namePerson/friendly',
+        // 'namePerson/friendly',
         'contact/email',
         'namePerson',
         'birthDate',
-        'person/gender',
-        'contact/postalCode/home',
-        'contact/country/home',
-        'pref/language',
+        // 'person/gender',
+        // 'contact/postalCode/home',
+        // 'contact/country/home',
+        // 'pref/language',
         'pref/timezone'
     ],
     'canLoginRules' => [],
     'prefix' => 'ntpcopenid', // 相關路由之前綴字串
     'sessionKey' => 'ntpcopenid', // 存放取回之 OpenID 資料之 session key
     'redirectToUrls' => [
-        'user_cancel' => '/', // user 取消認證 時導向至哪裡
-        'validate_fail' => '/', // user 驗證未過 時導向至哪裡
-        'login_allow' => '/', // user 允許登入後 導向至哪裡
-        'login_deny' => '/', // user 被拒絕登入 時導向至哪裡
-        'other' => '/', // 其他狀況未經正常程序，如直接輸入網址瀏覽，導向至哪裡
+        'user_cancel' => '/login', // user 取消認證 時導向至哪裡
+        'validate_fail' => '/login', // user 驗證未過 時導向至哪裡
+        'login_allow' => '/ntpc-login', // user 允許登入後 導向至哪裡
+        'login_deny' => '/login', // user 被拒絕登入 時導向至哪裡
+        'other' => '/login', // 其他狀況未經正常程序，如直接輸入網址瀏覽，導向至哪裡
     ],
 
     /* 以下只有開發時測試用 */

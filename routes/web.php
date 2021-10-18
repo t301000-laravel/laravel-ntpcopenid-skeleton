@@ -1,6 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+    use App\Http\Controllers\Auth\AuthController;
+    use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::group(['middleware' => 'guest'], function () {
+    Route::view('login', 'login')->name('login');
+    Route::post('login', [AuthController::class, 'login']);
+
+    Route::get('ntpc-login', [AuthController::class, 'loginByNTPCOpenID']);
+});
+
+Route::group(['middleware' => 'auth'], function () {
+   Route::get('profile', [AuthController::class, 'profile'])->name('profile');
+   Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 });
 
 require __DIR__ . '/ntpcopenid.php';
