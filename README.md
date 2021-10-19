@@ -15,7 +15,10 @@
 
 ### 使用方式
 
-- 執行 `git clone https://github.com/t301000-laravel/laravel-ntpcopenid-skeleton.git`
+以下 `FOLDER_NAME` 自行替換成想要的資料夾名稱
+
+- 執行 `git clone https://github.com/t301000-laravel/laravel-ntpcopenid-skeleton.git FOLDER_NAME`
+- `cd FOLDER_NAME`
 - 將 `.env.example` 複製為 `.env` 並修改資料庫設定
 - 執行 `composer install`
 - 執行 `php artisan key:generate`
