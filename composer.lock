@@ -942,43 +942,6 @@
             "time": "2021-10-06T17:43:30+00:00"
         },
         {
-            "name": "kounta/lightopenid",
-            "version": "v0.7.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kounta/lightopenid.git",
-                "reference": "684f8e97f370cc41f5025899a1e01e886b3af3d6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kounta/lightopenid/zipball/684f8e97f370cc41f5025899a1e01e886b3af3d6",
-                "reference": "684f8e97f370cc41f5025899a1e01e886b3af3d6",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2.3"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "./"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "From https://gitorious.org/lightopenid/lightopenid.git",
-            "homepage": "https://github.com/kounta/lightopenid",
-            "keywords": [
-                "OpenId"
-            ],
-            "support": {
-                "source": "https://github.com/kounta/lightopenid/tree/v0.7.1"
-            },
-            "time": "2015-04-01T22:37:36+00:00"
-        },
-        {
             "name": "laravel/framework",
             "version": "v8.64.0",
             "source": {
@@ -5200,21 +5163,20 @@
         },
         {
             "name": "t301000/laravel-ntpc-openid",
-            "version": "0.3.2",
+            "version": "0.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/t301000/laravel-ntpc-openid.git",
-                "reference": "3d4685258566b51918d80266938cd19283caf168"
+                "reference": "ec79e0d613f1ef4d98a916938a77e962fc97ec0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/t301000/laravel-ntpc-openid/zipball/3d4685258566b51918d80266938cd19283caf168",
-                "reference": "3d4685258566b51918d80266938cd19283caf168",
+                "url": "https://api.github.com/repos/t301000/laravel-ntpc-openid/zipball/ec79e0d613f1ef4d98a916938a77e962fc97ec0a",
+                "reference": "ec79e0d613f1ef4d98a916938a77e962fc97ec0a",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^5.1|^6|^7|^8",
-                "kounta/lightopenid": "^0.7.1",
                 "php": ">=5.5.9"
             },
             "type": "library",
@@ -5251,9 +5213,9 @@
             ],
             "support": {
                 "issues": "https://github.com/t301000/laravel-ntpc-openid/issues",
-                "source": "https://github.com/t301000/laravel-ntpc-openid/tree/0.3.2"
+                "source": "https://github.com/t301000/laravel-ntpc-openid/tree/0.3.3"
             },
-            "time": "2021-04-24T12:01:30+00:00"
+            "time": "2021-10-26T15:03:34+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
